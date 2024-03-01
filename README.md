@@ -38,8 +38,6 @@ public class Phuongtrinhbac2 {
         if(a==0) {
             if(b!=0) {
                 double x;
-                                x= -c/b;
-                x=Math.round(x*100.0)/100.0;    // làm tròn số thập phân
                 System.out.println("Nghiem phuong trinh: "+x);
             }
             else if(b==0) {
@@ -58,13 +56,12 @@ public class Phuongtrinhbac2 {
                 double x;
                 x=(-b)/(2*a);
                 System.out.println("Phuong trinh co nghiem kep: ");
-                System.out.println("x= "+Math.round(x*100.0)/100.0);
             }
             else {
                 double x1;
                 double x2;
                 x1=(-b +Math.sqrt(delta))/(2*a);
-                x2=(-b -Math.sqrt(delta))/(2*a);
+                x2=(-b +Math.sqrt(delta))/(2*a);
                 System.out.println("Phuong trinh co nghiem phan biet: ");
                 System.out.println("x1: "+ Math.ceil(x1*100.0)/100.0);
                 System.out.println("x2: "+ Math.round(x2*100.0)/100.0);
